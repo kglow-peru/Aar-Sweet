@@ -68,7 +68,7 @@ footer{background:#7B2D4E;color:#FFE9F1;padding:28px 16px;text-align:center;font
 
 <button class="ib" id="cartBtn" aria-label="Carrito">🛍<b id="cc">0</b></button>
 </header>
-<nav><a href="#catalogo" data-c="">Inicio</a><a href="#catalogo" data-c="Labiales">Labios</a><a href="#catalogo" data-c="Bases y correctores">Rostro</a><a href="#catalogo" data-c="Sombras de ojos">Ojos</a><a href="#catalogo" data-c="Skincare">Skincare</a><a href="#catalogo" data-o="1">Ofertas</a><a href="#contacto">Contacto</a></nav>
+<nav><a href="#catalogo" data-c="">Inicio</a><a href="#catalogo" data-c="Labiales">Labios</a><a href="#catalogo" data-c="Bases y correctores">Rostro</a><a href="#catalogo" data-c="Sombras de ojos">Ojos</a><a href="#catalogo" data-c="Brochas y accesorios">Accesorios</a><a href="#contacto">Contacto</a></nav>
 <section class="hero"><h1>TU BELLEZA, TU REGLA</h1><p>Descubre el maquillaje que resalta tu esencia</p><a class="btn" href="#catalogo">COMPRAR AHORA</a></section>
 <main>
 
@@ -92,18 +92,32 @@ footer{background:#7B2D4E;color:#FFE9F1;padding:28px 16px;text-align:center;font
 
 <script>
 const P=[
-["Labial Mate Terciopelo","Velvet Co","Labiales",39,49,12,["#C2185B","#E75480","#8E2B3C"],"Oferta",90,1,"💄"],
-["Gloss Cristal","Lumi","Labiales",29,0,25,["#F8C8DC","#FF9AA2"],"Nuevo",60,3,"💋"],
-["Base Líquida Satín","Skin&Co","Bases y correctores",79,99,8,["#F3D2B8","#E3B592","#C58F6A"],"Más vendido",120,2,"🧴"],
-["Corrector Luminoso","Skin&Co","Bases y correctores",45,0,0,["#F3D2B8","#DDAF8A"],"",70,4,"🧴"],
-["Rubor en Crema","Petal","Rubores e iluminadores",42,0,18,["#F4A6B8","#E75480"],"Nuevo",55,6,"🌸"],
-["Iluminador Dorado","Lumi","Rubores e iluminadores",55,69,10,["#F5DFA8","#D4AF77"],"Oferta",65,5,"✨"],
-["Paleta Sombras Rosé","Velvet Co","Sombras de ojos",89,0,14,["Rosé","Nude"],"Más vendido",110,7,"🎨"],
-["Máscara Volumen","Petal","Pestañas",49,59,30,["Negro"],"Oferta",100,8,"👁"],
-["Set de Brochas x8","Artisan","Brochas y accesorios",119,149,6,["Rosa"],"Oferta",80,9,"🖌"],
-["Sérum Hidratante","Dewy","Skincare",69,0,20,["30 ml"],"Nuevo",75,10,"💧"],
-["Crema Facial SPF 50","Dewy","Skincare",59,0,4,["50 ml"],"",85,11,"🧖"],
-["Set Regalo Glam","Rosé Beauty","Sets de maquillaje",159,199,5,["Único"],"Oferta",95,12,"🎁"]
+["Base Nossa Matte", "Nossa", "Bases y correctores", 29, 0, 10, ["Único"], "Más vendido", 230, 1, "🧴"],
+["Polvo de Hadas Nossa", "Nossa", "Bases y correctores", 25, 0, 10, ["Único"], "Más vendido", 229, 2, "✨"],
+["Rubor Líquido Etérea Nossa", "Nossa", "Rubores e iluminadores", 22, 0, 10, ["Único"], "", 198, 3, "🌸"],
+["Rubor Líquido Nossa", "Nossa", "Rubores e iluminadores", 22, 0, 10, ["Único"], "Más vendido", 227, 4, "🌸"],
+["Iluminador en barra Shine Pola", "Pola", "Rubores e iluminadores", 24, 0, 10, ["Único"], "Más vendido", 226, 5, "✨"],
+["Sombras Natural Vibes Teddy Nossa", "Nossa", "Sombras de ojos", 32, 0, 10, ["Único"], "Más vendido", 225, 6, "🎨"],
+["Crayón Delineador Nossa", "Nossa", "Sombras de ojos", 16, 0, 10, ["Único"], "Más vendido", 224, 7, "✏️"],
+["Rímel Efecto Rizador Curl & Volume", "Curl & Volume", "Pestañas", 19, 0, 10, ["Único"], "", 193, 8, "👁"],
+["Rímel Transparente Serum Lash", "Serum Lash", "Pestañas", 19, 0, 10, ["Único"], "", 192, 9, "👁"],
+["Labial Matte Luna Nossa", "Nossa", "Labiales", 17, 0, 10, ["Único"], "", 191, 10, "💄"],
+["Labial en Barra Balmy Kiss", "Balmy Kiss", "Labiales", 15, 0, 10, ["Único"], "", 190, 11, "💄"],
+["Labial Líquido Matte Coffee Queen Taldee", "Taldee", "Labiales", 18, 0, 10, ["Único"], "", 189, 12, "💄"],
+["Tinta Labial Abejita Pola", "Pola", "Labiales", 14, 0, 10, ["Único"], "Más vendido", 218, 13, "💋"],
+["Tinta Labial Red Lips Pola", "Pola", "Labiales", 14, 0, 10, ["Único"], "", 187, 14, "💋"],
+["Lip Gloss Glossy Nossa", "Nossa", "Labiales", 15, 0, 10, ["Único"], "", 186, 15, "💋"],
+["Lip Gloss Nossa Hidratante", "Nossa", "Labiales", 15, 0, 10, ["Único"], "", 185, 16, "💋"],
+["Lip Oil Pool Party Nossa", "Nossa", "Labiales", 18, 0, 10, ["Único"], "", 184, 17, "💋"],
+["Lip Oil Jelly Wow", "Jelly Wow", "Labiales", 17, 0, 10, ["Único"], "", 183, 18, "💋"],
+["Gloss Destellos Sweet Girl", "Sweet Girl", "Labiales", 15, 0, 10, ["Único"], "", 182, 19, "💋"],
+["Bálsamo Fresita Pink", "Fresita Pink", "Labiales", 12, 0, 10, ["Único"], "Más vendido", 211, 20, "🍓"],
+["Rizador Shining You Ruby Face", "Ruby Face", "Brochas y accesorios", 18, 0, 10, ["Único"], "Más vendido", 210, 21, "👁"],
+["Esponjas Cute Ruby Face", "Ruby Face", "Brochas y accesorios", 12, 0, 10, ["Único"], "Más vendido", 209, 22, "🧽"],
+["Borla para Polvo Ruby Face", "Ruby Face", "Brochas y accesorios", 10, 0, 10, ["Único"], "Más vendido", 208, 23, "☁️"],
+["Borlas Soft Touch", "Soft Touch", "Brochas y accesorios", 10, 0, 10, ["Único"], "Más vendido", 207, 24, "☁️"],
+["Brocha Difuminadora Ruby Face", "Ruby Face", "Brochas y accesorios", 14, 0, 10, ["Único"], "", 176, 25, "🖌"],
+["Brochas Difuminadoras Ruby Face", "Ruby Face", "Brochas y accesorios", 22, 0, 10, ["Único"], "", 175, 26, "🖌"]
 ].map((a,i)=>({id:i+1,n:a[0],b:a[1],c:a[2],p:a[3],o:a[4],s:a[5],t:a[6],tag:a[7],pop:a[8],nw:a[9],e:a[10]}));
 const $=s=>document.querySelector(s),money=n=>"S/ "+n.toFixed(2),WA_NUMBER="51902188639",waUrl=m=>"https://wa.me/"+WA_NUMBER+"?text="+encodeURIComponent(m),waMsg=()=>"Hola Aar & Sweet, quiero pedir:\n"+cart.map(i=>{const p=prod(i.id);return "• "+i.q+" x "+p.n+(/^#/.test(p.t[0])?"":" ("+p.t[i.t]+")")}).join("\n")+"\nTotal: "+money(totals().total);
 let cat="",shown=8,cart=[],favs=[],coupon="",pick={},orders=[];
@@ -146,7 +160,7 @@ $("#modOv").onclick=e=>{if(e.target.id=="modOv")closeM()};
 $("#more").onclick=()=>{shown+=8;render()};
 $("#cats").onclick=e=>{if(e.target.dataset.c!==undefined){cat=e.target.dataset.c;$("#onlyOff").checked=false;shown=8;render()}};
 document.querySelectorAll("nav a[data-c]").forEach(a=>a.onclick=()=>{cat=a.dataset.c;$("#onlyOff").checked=false;render()});
-document.querySelector("nav a[data-o]").onclick=()=>{cat="";$("#onlyOff").checked=true;render()};
+
 
 render();$("#wa").href=waUrl("Hola Aar & Sweet, quiero información sobre sus productos.");$("#wa2").href=$("#wa").href;
 </script>
